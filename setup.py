@@ -1,14 +1,23 @@
 from setuptools import setup, find_packages
 
+VERSION = '0.0.1'
+DESCRIPTION = 'MVR Parser'
 
+# Setting up
 setup(
-    name='mvr_parser',
-    version='1.0.0-alpha1',
-    license='MIT',
+    name="mvr-parser",
+    version=VERSION,
     author="Harry Bilney",
-    author_email='harry@harrybilney.co.uk',
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
-    url='https://github.com/harry-bilney/mvr-parser-py',
-    keywords='',
+    author_email="<harry@harrybilney.co.uk>",
+    description=DESCRIPTION,
+    packages=find_packages(),
+    keywords=['python', 'mvr'],
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
 )
